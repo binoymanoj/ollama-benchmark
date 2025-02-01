@@ -52,15 +52,30 @@ pip install -r requirements.txt
 python benchmark.py
 ```
 
-## Configuration
+## Select Models to Compare
+The benchmark tool provides an interactive terminal interface for selecting which models to test:
 
-### Modifying Test Models
+Navigation Controls:
 
-Edit the `models` list (line 76) in `benchmark.py` to include your installed Ollama models:
+↑ or k: Move cursor up
+↓ or j: Move cursor down
+SPACE: Toggle model selection
+ENTER: Confirm selection and start benchmark
 
-```python
-models = ["codellama", "mistral", "neural-chat"]  # Replace with your models
-```
+
+Selection Interface:
+
+CopySelect models using SPACE, navigate with UP/DOWN or j/k. Press ENTER when done.
+[ ] llama2
+[*] mistral
+[ ] codellama
+[*] neural-chat
+
+[ ]: Unselected model
+[*]: Selected model
+Highlighted row: Current cursor position
+
+> Note: You can select multiple models to benchmark them against each other in a single run. There is no limit to the number of models you can select, but testing more models will naturally take longer.
 
 ### Customizing Test Cases
 
