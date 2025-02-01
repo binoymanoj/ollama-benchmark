@@ -66,10 +66,12 @@ ENTER: Confirm selection and start benchmark
 Selection Interface:
 
 Select models using SPACE, navigate with UP/DOWN or j/k. Press ENTER when done.
+```
 [ ] llama2
-[\*] mistral
+[*] mistral
 [ ] codellama
-[\*] neural-chat
+[*] neural-chat
+```
 
 [ ]: Unselected model
 [*]: Selected model
